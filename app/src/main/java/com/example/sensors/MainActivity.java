@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if (sensor.getType() == Sensor.TYPE_ACCELEROMETER)
         {
             float x = event.values[0];
-            float y = event.values[0];
-            float z = event.values[0];
+            float y = event.values[1];
+            float z = event.values[2];
 
             EditText accelX = findViewById(R.id.accelXText);
             EditText accelY = findViewById(R.id.accelYText);
@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         else if (sensor.getType() == Sensor.TYPE_GYROSCOPE)
         {
             float x = event.values[0];
-            float y = event.values[0];
-            float z = event.values[0];
+            float y = event.values[1];
+            float z = event.values[2];
 
             EditText gyroX = findViewById(R.id.gyroXText);
             EditText gyroY = findViewById(R.id.gyroYText);
@@ -145,8 +145,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         else if (sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD)
         {
             float x = event.values[0];
-            float y = event.values[0];
-            float z = event.values[0];
+            float y = event.values[1];
+            float z = event.values[2];
 
             EditText magX = findViewById(R.id.magXText);
             EditText magY = findViewById(R.id.magYText);
